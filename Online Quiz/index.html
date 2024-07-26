@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Application</title>
+    <!-- ============= stylesheet link ============= -->
+    <link rel="stylesheet" href="styleQ.css">
+    <!-- ============= font awesome cdn ============= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- =============== NAVIGATION BAR ================== -->
+    <nav>
+        <div class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <h1>Test<span>app</span></h1>
+        </div>
+            <div class="right">
+                <form action="#">
+                    <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" name="search" required="">
+                    <i class="fa-solid fa-microphone"></i>
+                </form>
+            </div>
+            <div class="profile">
+                <img src="./img/user.png" alt="profile">
+            </div>
+        </div>
+    </nav>
+<!-- ============= Start on Agreement ============= -->
+        <div class="check">
+            <div class="user"><i class="fa-solid fa-user"></i>
+              <h1>Are you would like to take a Test/Quiz Right?</h1>
+            </div>
+            <div class="select">
+                <label for="level">Level</label>
+                <select name="" id="level">
+                    <option value="">Any</option>
+                    <option value="middle">middle</option>
+                    <option value="high">high</option>
+                    <option value="any">any</option>
+                </select>
+                <label for="defficulty">Defficulty</label>
+                <select name="defficulty" id="defficult">
+                    <option value="">Any</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+                <label for="time">Time</label>
+                <select name="time" id="time">
+                    <option value="">Any</option>
+                    <option value="10">10s</option>
+                    <option value="15">15s</option>
+                </select>
+            </div>
+            <h2>Note!</h2>
+            <h3>Please follow instruction and agree our terms and condition to take test.</h3>
+            <p>
+                All questions carrey equal marks each question have four option <span>a, b, c, d</span> select one option.
+                Without selecting any option you will be <span class="warning">display warning</span> and next question will be never start. You will be display 
+                <span class="success">exactly right answer</span> in case your selected choice is wrong.
+                Every question is time bound if you are not respond in given time the test will be definitely hand over and display popup alert message to start again are cancel. 
+                The number of total question is <Span>20</Span> you will be given <span>Rewards</span>
+                after completing the test. 
+                <input type="checkbox" id="checked" required="">
+            </p>
+            <div class="btn startBtn">Start now</div>
+        </div>
+  
+    
+    
+     <div class="alert">Alert</div>
+     <!-- ============== TEST PART ============== -->
+     <div class="container">
+        <div class="timer">
+            <div class="progress">
+                <div class="progress-bar">
+                    <span class="progress-text"></span>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-user"></i>
+        <h1 class="header">Please take your time and test</h1>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <button class="btn nextBtn">Next</button>
+        <div class="scoreCard"></div>
+     </div>
+    
+    
+    <!-- ================== javascript ================== -->
+    <script src="script.js"></script>
+</body>
+</html>
